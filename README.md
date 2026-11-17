@@ -1,1 +1,1 @@
-Main page: https://github.com/Smurfvillecanberra/Home
+Main page: https://smurfvillecanberra.github.io/Home/
