@@ -1,59 +1,59 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Smurfville | Campervan Hire from Canberra</title>
-	<meta name="description" content="Hire Smurfville, a fully furnished two-person campervan from Canberra, ACT. From $149 per night.">
-	
-	<!-- Flatpickr CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
-
-	<style>
-		:root{--navy:#102d4b;--blue:#1c5d91;--sky:#eaf5fb;--sand:#f6f1e8;--ink:#203040}
-		*{box-sizing:border-box}
-		body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.55;background:#fff}
-		header{background:linear-gradient(120deg,#0c2944,#1d6596);color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:15px}
-		.logo{font-weight:900;font-size:1.35rem;letter-spacing:2px}
-		nav a{color:white;text-decoration:none;margin-left:18px;font-weight:700;font-size:.95rem}
-		.hero{min-height:470px;background:linear-gradient(90deg,rgba(5,24,43,.78),rgba(5,24,43,.12)),url('images/smurfville-coast.jpeg') center/cover;display:flex;align-items:center;padding:55px 7%;color:white}
-		.hero-inner{max-width:650px}
-		.eyebrow{text-transform:uppercase;letter-spacing:3px;font-weight:700;color:#c9eaff}
-		h1{font-size:clamp(2.7rem,7vw,5rem);line-height:1.0;margin:12px 0}
-		.hero p{font-size:1.2rem;max-width:550px}
-		.btn{display:inline-block;background:#f4c66b;color:#142d43;padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:800;margin-top:12px;transition:opacity .2s,background .2s}
-		.btn:disabled{opacity:0.5;cursor:not-allowed}
-		section{padding:58px 7%}
-		.intro{background:var(--sand);text-align:center}
-		.intro h2,.section-title{font-size:2rem;color:var(--navy);margin:0 0 12px}
-		.price{font-size:2rem;font-weight:900;color:var(--blue)}
-		.muted{color:#617080}
-		.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:26px}
-		.card{background:white;border:1px solid #e5ebef;border-radius:16px;padding:22px;box-shadow:0 5px 18px #102d4b0b}
-		.card h3{color:var(--navy);margin:0 0 8px}
-		.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:25px}
-		.gallery img{width:100%;height:240px;object-fit:cover;border-radius:14px}
-		.features{background:var(--sky)}
-		.pill-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-		.pill{background:white;border:1px solid #d8e7f0;padding:9px 14px;border-radius:30px;font-weight:700}
-		.notice{background:#fff7e7;border-left:5px solid #e4b34f;padding:16px 18px;border-radius:8px;margin-top:22px}
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Smurfville | Campervan Hire from Canberra</title>
+		<meta name="description" content="Hire Smurfville, a fully furnished two-person campervan from Canberra, ACT. From $149 per night.">
 		
-		/* Form styles */
-		form#enquiry{max-width:760px;margin:25px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:left}
-		input,textarea,select{width:100%;padding:13px;border:1px solid #ccd7df;border-radius:8px;font:inherit;background:#fff}
-		textarea{grid-column:1/-1;min-height:110px}
-		form#enquiry button{grid-column:1/-1;border:0;cursor:pointer}
+		<!-- Flatpickr CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
 		
-		/* Legend and alert elements */
-		.form-legend{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:0.85rem;color:#617080;margin:2px 0 6px}
-		.legend-sw{display:inline-block;width:15px;height:15px;border-radius:4px;border:1px solid #cbd5e1;vertical-align:-3px;margin-right:5px;background:repeating-linear-gradient(-45deg,#f1f5f9,#f1f5f9 3px,#cbd5e1 3px,#cbd5e1 6px)}
-		.form-alert{grid-column:1/-1;padding:12px 16px;border-radius:8px;font-size:0.9rem;display:flex;gap:8px;align-items:center}
-		.form-alert.amber{background:#fff7e7;border:1px solid #e4b34f;color:#855d14}
-		.form-alert.red{background:#fef2f2;border:1px solid #f87171;color:#991b1b}
-		.form-alert a{color:inherit;font-weight:bold;text-decoration:underline}
-
-		/* Rental Summary Box */
-		.rental-summary {
+		<style>
+			:root{--navy:#102d4b;--blue:#1c5d91;--sky:#eaf5fb;--sand:#f6f1e8;--ink:#203040}
+			*{box-sizing:border-box}
+			body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.55;background:#fff}
+			header{background:linear-gradient(120deg,#0c2944,#1d6596);color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:15px}
+			.logo{font-weight:900;font-size:1.35rem;letter-spacing:2px}
+			nav a{color:white;text-decoration:none;margin-left:18px;font-weight:700;font-size:.95rem}
+			.hero{min-height:470px;background:linear-gradient(90deg,rgba(5,24,43,.78),rgba(5,24,43,.12)),url('images/smurfville-coast.jpeg') center/cover;display:flex;align-items:center;padding:55px 7%;color:white}
+			.hero-inner{max-width:650px}
+			.eyebrow{text-transform:uppercase;letter-spacing:3px;font-weight:700;color:#c9eaff}
+			h1{font-size:clamp(2.7rem,7vw,5rem);line-height:1.0;margin:12px 0}
+			.hero p{font-size:1.2rem;max-width:550px}
+			.btn{display:inline-block;background:#f4c66b;color:#142d43;padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:800;margin-top:12px;transition:opacity .2s,background .2s}
+			.btn:disabled{opacity:0.5;cursor:not-allowed}
+			section{padding:58px 7%}
+			.intro{background:var(--sand);text-align:center}
+			.intro h2,.section-title{font-size:2rem;color:var(--navy);margin:0 0 12px}
+			.price{font-size:2rem;font-weight:900;color:var(--blue)}
+			.muted{color:#617080}
+			.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:26px}
+			.card{background:white;border:1px solid #e5ebef;border-radius:16px;padding:22px;box-shadow:0 5px 18px #102d4b0b}
+			.card h3{color:var(--navy);margin:0 0 8px}
+			.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:25px}
+			.gallery img{width:100%;height:240px;object-fit:cover;border-radius:14px}
+			.features{background:var(--sky)}
+			.pill-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+			.pill{background:white;border:1px solid #d8e7f0;padding:9px 14px;border-radius:30px;font-weight:700}
+			.notice{background:#fff7e7;border-left:5px solid #e4b34f;padding:16px 18px;border-radius:8px;margin-top:22px}
+			
+			/* Form styles */
+			form#enquiry{max-width:760px;margin:25px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:left}
+			input,textarea,select{width:100%;padding:13px;border:1px solid #ccd7df;border-radius:8px;font:inherit;background:#fff}
+			textarea{grid-column:1/-1;min-height:110px}
+			form#enquiry button{grid-column:1/-1;border:0;cursor:pointer}
+			
+			/* Legend and alert elements */
+			.form-legend{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:0.85rem;color:#617080;margin:2px 0 6px}
+			.legend-sw{display:inline-block;width:15px;height:15px;border-radius:4px;border:1px solid #cbd5e1;vertical-align:-3px;margin-right:5px;background:repeating-linear-gradient(-45deg,#f1f5f9,#f1f5f9 3px,#cbd5e1 3px,#cbd5e1 6px)}
+			.form-alert{grid-column:1/-1;padding:12px 16px;border-radius:8px;font-size:0.9rem;display:flex;gap:8px;align-items:center}
+			.form-alert.amber{background:#fff7e7;border:1px solid #e4b34f;color:#855d14}
+			.form-alert.red{background:#fef2f2;border:1px solid #f87171;color:#991b1b}
+			.form-alert a{color:inherit;font-weight:bold;text-decoration:underline}
+			
+			/* Rental Summary Box */
+			.rental-summary {
 			grid-column: 1 / -1;
 			display: none;
 			width: 100%;
@@ -64,69 +64,69 @@
 			border-radius: 16px;
 			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 			color: #1e293b;
-		}
-		.summary-title {font-size: 20px;margin: 0 0 4px 0;font-weight: 700;letter-spacing: -0.02em}
-		.summary-subtitle {font-size: 14px;color: #64748b;margin: 0 0 20px 0}
-		.rental-duration {display: flex;justify-content: space-between;align-items: center;padding: 14px 18px;background: #f8fafc;border: 1px solid #f1f5f9;border-radius: 10px;margin-bottom: 18px;font-size: 15px;color: #334155}
-		.rental-duration strong {font-size: 18px;color: #0f172a;font-weight: 600}
-		.season-breakdown {display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 14px}
-		.season-card {display: flex;justify-content: space-between;align-items: center;padding: 16px 18px;border: 1px solid #e2e8f0;border-radius: 10px;background: #ffffff}
-		.season-info {display: flex;align-items: center;gap: 10px}
-		.season-text-group h4 {margin: 0 0 2px 0;font-size: 14px;font-weight: 600;color: #0f172a}
-		.season-text-group small {color: #64748b;font-size: 12px;display: block}
-		.season-dot {width: 10px;height: 10px;border-radius: 50%;flex-shrink: 0}
-		.normal-dot {background: #3b82f6}
-		.high-dot {background: #f59e0b}
-		.season-price {text-align: right}
-		.season-price .day-count {display: block;font-size: 12px;color: #64748b;margin-bottom: 2px}
-		.season-price .price-value {font-size: 17px;font-weight: 600;color: #0f172a}
-		.estimated-total {margin-top: 20px;padding: 20px;background: #f0f7ff;border: 1px solid #e0f2fe;border-radius: 12px}
-		.total-row {display: flex;justify-content: space-between;align-items: center;margin-bottom: 14px}
-		.total-label {font-size: 16px;font-weight: 600;color: #1e40af}
-		.total-amount {font-size: 28px;font-weight: 700;color: #1e3a8a;letter-spacing: -0.03em}
-		.price-disclaimer {display: flex;align-items: flex-start;gap: 8px;padding-top: 12px;border-top: 1px solid #ddedff;margin-top:8px}
-		.disclaimer-icon {color: #3b82f6;font-size: 13px;line-height: 1.4}
-		.disclaimer-text {color: #64748b;font-size: 12px;line-height: 1.5}
-
-		/* Footer */
-		.dark-footer {padding: 40px 20px;background: #102d4b;color: #f1f5f9;text-align: center}
-		.dark-footer b {font-size: 20px;letter-spacing: 1px;color: #ffffff}
-		.footer-contacts p {margin: 10px 0;font-size: 16px;color: #cbd5e1}
-		.dark-contact-link {color: #38bdf8;text-decoration: underline;font-weight: 600}
-		.dark-footer .small {font-size: 12px;color: #94a3b8;max-width: 650px;margin: 25px auto 0;line-height: 1.6}
-
-		/* Flatpickr Theme Customisation */
-		.flatpickr-calendar {
+			}
+			.summary-title {font-size: 20px;margin: 0 0 4px 0;font-weight: 700;letter-spacing: -0.02em}
+			.summary-subtitle {font-size: 14px;color: #64748b;margin: 0 0 20px 0}
+			.rental-duration {display: flex;justify-content: space-between;align-items: center;padding: 14px 18px;background: #f8fafc;border: 1px solid #f1f5f9;border-radius: 10px;margin-bottom: 18px;font-size: 15px;color: #334155}
+			.rental-duration strong {font-size: 18px;color: #0f172a;font-weight: 600}
+			.season-breakdown {display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 14px}
+			.season-card {display: flex;justify-content: space-between;align-items: center;padding: 16px 18px;border: 1px solid #e2e8f0;border-radius: 10px;background: #ffffff}
+			.season-info {display: flex;align-items: center;gap: 10px}
+			.season-text-group h4 {margin: 0 0 2px 0;font-size: 14px;font-weight: 600;color: #0f172a}
+			.season-text-group small {color: #64748b;font-size: 12px;display: block}
+			.season-dot {width: 10px;height: 10px;border-radius: 50%;flex-shrink: 0}
+			.normal-dot {background: #3b82f6}
+			.high-dot {background: #f59e0b}
+			.season-price {text-align: right}
+			.season-price .day-count {display: block;font-size: 12px;color: #64748b;margin-bottom: 2px}
+			.season-price .price-value {font-size: 17px;font-weight: 600;color: #0f172a}
+			.estimated-total {margin-top: 20px;padding: 20px;background: #f0f7ff;border: 1px solid #e0f2fe;border-radius: 12px}
+			.total-row {display: flex;justify-content: space-between;align-items: center;margin-bottom: 14px}
+			.total-label {font-size: 16px;font-weight: 600;color: #1e40af}
+			.total-amount {font-size: 28px;font-weight: 700;color: #1e3a8a;letter-spacing: -0.03em}
+			.price-disclaimer {display: flex;align-items: flex-start;gap: 8px;padding-top: 12px;border-top: 1px solid #ddedff;margin-top:8px}
+			.disclaimer-icon {color: #3b82f6;font-size: 13px;line-height: 1.4}
+			.disclaimer-text {color: #64748b;font-size: 12px;line-height: 1.5}
+			
+			/* Footer */
+			.dark-footer {padding: 40px 20px;background: #102d4b;color: #f1f5f9;text-align: center}
+			.dark-footer b {font-size: 20px;letter-spacing: 1px;color: #ffffff}
+			.footer-contacts p {margin: 10px 0;font-size: 16px;color: #cbd5e1}
+			.dark-contact-link {color: #38bdf8;text-decoration: underline;font-weight: 600}
+			.dark-footer .small {font-size: 12px;color: #94a3b8;max-width: 650px;margin: 25px auto 0;line-height: 1.6}
+			
+			/* Flatpickr Theme Customisation */
+			.flatpickr-calendar {
 			border-radius: 14px !important;
 			box-shadow: 0 12px 30px rgba(16, 45, 75, 0.15) !important;
 			border: 1px solid #cbd5e1 !important;
 			font-family: inherit !important;
-		}
-		.flatpickr-day {
+			}
+			.flatpickr-day {
 			border-radius: 8px !important;
 			color: #1e293b !important;
-		}
-		.flatpickr-day.selected, 
-		.flatpickr-day.startRange, 
-		.flatpickr-day.endRange {
+			}
+			.flatpickr-day.selected, 
+			.flatpickr-day.startRange, 
+			.flatpickr-day.endRange {
 			background: var(--blue) !important;
 			border-color: var(--blue) !important;
 			color: #fff !important;
-		}
-		.flatpickr-day:hover {
+			}
+			.flatpickr-day:hover {
 			background: #eaf5fb !important;
-		}
-		.flatpickr-day.flatpickr-disabled,
-		.flatpickr-day.flatpickr-disabled:hover,
-		.flatpickr-day.disabled,
-		.flatpickr-day.disabled:hover {
+			}
+			.flatpickr-day.flatpickr-disabled,
+			.flatpickr-day.flatpickr-disabled:hover,
+			.flatpickr-day.disabled,
+			.flatpickr-day.disabled:hover {
 			background-color: #f1f5f9 !important;
 			background: repeating-linear-gradient(
-				-45deg,
-				#f8fafc,
-				#f8fafc 4px,
-				#e2e8f0 4px,
-				#e2e8f0 8px
+			-45deg,
+			#f8fafc,
+			#f8fafc 4px,
+			#e2e8f0 4px,
+			#e2e8f0 8px
 			) !important;
 			border-color: transparent !important;
 			color: #94a3b8 !important;
@@ -134,9 +134,9 @@
 			text-decoration: line-through;
 			cursor: not-allowed !important;
 			pointer-events: none;
-		}
-
-		@media(max-width:650px){
+			}
+			
+			@media(max-width:650px){
 			header{display:block}
 			nav{margin-top:10px}
 			nav a{margin:0 12px 0 0}
@@ -145,529 +145,529 @@
 			form#enquiry{grid-template-columns:1fr}
 			.season-breakdown{grid-template-columns:1fr;gap:10px}
 			.total-row{flex-direction:column;align-items:flex-start;gap:6px}
-		}
-	</style>
-</head>
-<body>
-
-	<header>
-		<div class="logo">SMURFVILLE 🚐</div>
-		<nav>
-			<a href="#van">The van</a>
-			<a href="#features">Features</a>
-			<a href="#gallery">Photos</a>
-			<a href="#booking">Enquire</a>
-		</nav>
-	</header>
-
-	<div class="hero" style="background-image: linear-gradient(90deg, rgba(5, 24, 43, 0.78), rgba(5, 24, 43, 0.12)), url('pic/cov.jpg');">
-		<div class="hero-inner">
-			<div class="eyebrow">CANBERRA · AUSTRALIA</div>
-			<h1>Your car.<br>Your home.<br>Endless adventures.</h1>
-			<p>Meet Smurfville — a fun-sized, fully furnished campervan made for easy city escapes, coastal weekends and slow mornings by the sea.</p>
-			<a class="btn" href="#booking">Enquire to book</a>
-		</div>
-	</div>
-
-	<section class="intro">
-		<h2>Your cozy home on wheels</h2>
-		<p>Cosy, practical, easy to drive and park. Smurfville is designed for two adults and maybe 1 small kid (T&amp;Cs apply), who want the freedom to explore without giving up the comforts of home.</p>
-		<div class="price">From $149 per night</div>
-		<p class="muted">Minimum hire: 2 nights · Long-stay discounts available for hires over 7 days.</p>
-	</section>
-
-	<section id="van">
-		<h2 class="section-title">Fully furnished van. Big freedom.</h2>
-		<p>This fun-sized legend sleeps <b>2 adults</b> in a queen size bed. There’s a dining table for meals, planning the next stop or simply relaxing after a day out. The kitchen comes equipped with the essentials, and the van is set up for flexible off-grid adventures.</p>
-		<div class="grid">
-			<div class="card"><h3>🛏 Sleep &amp; relax</h3><p>Cosy queen size bed, dining table and seating area. Fully equipped with awning, camping indoor &amp; outdoor dining set-up.</p></div>
-			<div class="card"><h3>🍳 Cook on the go</h3><p>Kitchen essentials, microwave, induction cooking, fridge/freezer and cooking equipment.</p></div>
-			<div class="card"><h3>🌞 Off-grid friendly</h3><p>Heavy battery system, solar panels and vehicle charging while driving help support free-camping trips.</p></div>
-			<div class="card"><h3>🚿 Everyday comforts</h3><p>Heated bed, skylight and fan duo, shower/hose, plus a portable toilet for urine only.</p></div>
-		</div>
-	</section>
-
-	<section class="features" id="features">
-		<h2 class="section-title">What's included</h2>
-		<div class="pill-list">
-			<span class="pill">Insulated &amp; heated bed for winter</span><span class="pill">Basic pantry</span><span class="pill">Camping table &amp; chairs</span><span class="pill">Coffee &amp; tea</span><span class="pill">Boiling water</span><span class="pill">Cutlery &amp; plates</span><span class="pill">Fridge</span><span class="pill">Freezer</span><span class="pill">Fan</span><span class="pill">Outdoor kitchen</span><span class="pill">Solar panels</span><span class="pill">Speaker</span><span class="pill">Microwave &amp; Induction cooking</span><span class="pill">Cooking equipment</span><span class="pill">Outdoor shower/hose</span><span class="pill">Big storage for fishing gears &amp; outdoor equipment</span><span class="pill">Portable toilet (urine only)</span>
-		</div>
-		<div class="notice"><b>Power for the road:</b> The onboard battery can recharge while driving, with solar panels providing extra support. 2 hours of driving fully charges the batteries; actual power depends on conditions and usage.</div>
-		<p style="margin-top:18px"><b>Pack your clothes and go!</b></p>
-	</section>
-
-	<section>
-		<h2 class="section-title">Hire details</h2>
-		<div class="grid">
-			<div class="card"><h3>Pickup/Drop off</h3><p>Canberra, ACT</p></div>
-			<div class="card"><h3>Driving</h3><p>Toyota HiAce 2010 Automatic transmission · 3 seatbelts · Full licence required · Premium Diesel ·</p></div>
-			<div class="card"><h3>Who can hire?</h3><p>Minimum hirer age: 20 years old</p></div>
-			<div class="card"><h3>House rules</h3><p>No pets · No off-road driving · Sleeps 2 adults · No smoking inside · Clean as you go ·</p></div>
-		</div>
-		<div class="notice"><b>Long-term savings:</b> Tiered discounts of 10–15% may be available for bookings longer than 7 days. The exact discount will be confirmed with your quote.</div>
-	</section>
-
-	<section id="gallery">
-		<h2 class="section-title">Take a look inside</h2>
-		<p class="muted">A few snapshots of Smurfville, inside and out.</p>
-		<div class="gallery">
-			<img src=".\pic\1.jpg" alt="Smurfville campervan photo"><img src=".\pic\2.jpg" alt="Smurfville campervan photo"><img src=".\pic\3.jpg" alt="Smurfville campervan photo"><img src=".\pic\4.jpg" alt="Smurfville campervan photo"><img src=".\pic\5.jpg" alt="Smurfville campervan photo"><img src=".\pic\6.jpg" alt="Smurfville campervan photo"><img src=".\pic\7.jpg" alt="Smurfville campervan photo">
-		</div>
-	</section>
-		
-	<section id="booking" class="intro">
-		<h2>Ready for an adventure?</h2>
-		<p>Send an enquiry with your dates and number of travellers. We’ll get back to you to confirm availability and the total price.</p>
-		
-		<form id="enquiry" novalidate>
-			<input required id="name" name="name" placeholder="Your name">
-			<input required type="email" id="email" name="email" placeholder="Email address">
-			<input required id="phone" name="phone" placeholder="Phone number">
-			
-			<select id="travellers" name="travellers">
-				<option value="2">2 travellers</option>
-				<option value="1">1 traveller</option>
-			</select>
-			
-			<!-- Flatpickr inputs -->
-			<input required id="pickup" name="pickup" placeholder="Pickup Date" readonly>
-			<input required id="return" name="return" placeholder="Return Date — pick pickup first" readonly disabled>
-			
-			<!-- Live Availability Status & Legend -->
-			<div class="form-legend">
-				<span id="cal-loading">⏳ Loading live availability…</span>
-				<span id="cal-legend" style="display:none;">
-			</div>
-
-			<!-- Error Notices -->
-			<div class="form-alert amber" id="cal-error" style="display:none;">
-				<span>⚠</span><span>Can't sync live availability — you can still pick dates and submit, or <a href="https://wa.me/61493790098" target="_blank" rel="noreferrer">message us on WhatsApp</a>.</span>
-			</div>
-			<div class="form-alert red" id="submit-error" style="display:none;">
-				<span>✕</span><span id="submit-error-text"></span>
-			</div>
-			
-			<textarea id="message" name="message" placeholder="Tell us anything else (optional)"></textarea>
-			
-			<!-- Rental Cost Breakdown -->
-			<div id="rentalSummarySection" class="rental-summary">
-				<h3 class="summary-title">Rental Summary</h3>
-				<p class="summary-subtitle">Your rental cost breakdown</p>
-				
-				<div class="rental-duration">
-					<span>Total Rental Duration</span>
-					<strong><span id="rentalDays">0</span> Nights</strong>
-				</div>
-				
-				<div class="season-breakdown">
-					<div id="normalSeasonSection" class="season-card">
-						<div class="season-info">
-							<span class="season-dot normal-dot"></span>
-							<div class="season-text-group">
-								<h4>Normal Season</h4>
-								<small>$149 per night</small>
-							</div>
-						</div>
-						<div class="season-price">
-							<span class="day-count"><span id="normalDays">0</span> Nights</span>
-							<strong class="price-value">$<span id="normalTotal">0</span></strong>
-						</div>
-					</div>
-					
-					<div id="highSeasonSection" class="season-card">
-						<div class="season-info">
-							<span class="season-dot high-dot"></span>
-							<div class="season-text-group">
-								<h4>High Season</h4>
-								<small>$180 per night · Dec–Feb</small>
-							</div>
-						</div>
-						<div class="season-price">
-							<span class="day-count"><span id="highDays">0</span> Nights</span>
-							<strong class="price-value">$<span id="highTotal">0</span></strong>
-						</div>
-					</div>
-				</div>
-				
-				<div class="estimated-total">
-					<div class="total-row">
-						<div class="total-label">Estimated Rental Price</div>
-						<div class="total-amount">$<span id="totalPrice">0</span></div>
-					</div>
-					
-					<div class="price-disclaimer">
-						<span class="disclaimer-icon">ⓘ</span>
-						<span class="disclaimer-text">This is an estimated price only. The final price will be confirmed prior to payment.</span>
-					</div>
-					<div class="price-disclaimer">
-						<span class="disclaimer-icon">ⓘ</span>
-						<span class="disclaimer-text">Rental Payment: Full payment is due in cash upon van collection.</span>
-					</div>
-					<div class="price-disclaimer">
-						<span class="disclaimer-icon">ⓘ</span>
-						<span class="disclaimer-text">Refundable Bond: A $250 refundable bond via PayID 0493790098 is required to confirm your booking — refunded on safe return.</span>
-					</div>
-					<div class="price-disclaimer">
-						<span class="disclaimer-icon">ⓘ</span>
-						<span class="disclaimer-text">Pick-up and drop-off times must be arranged.<br>
-• Preferred Pick-up: 5:30 PM – 7:00 PM<br>
-• Preferred Drop-off: 5:00 PM – 6:30 PM</span>
-					</div>
-				</div>
-			</div>
-			
-			<button class="btn" id="submit-btn" type="submit" disabled style="padding:15px; font-size:1.05rem;">Select dates to enquire</button>
-		</form>
-
-		<p id="formmsg" class="muted" style="text-align:center; max-width:760px; margin:22px auto 0; font-size:0.85rem;">*Please note that a refundable security bond of $250 is required upon booking. This amount will be fully refunded following the safe return of the van, subject to an inspection confirming no damage, missing items, or violations of our Terms and Conditions.</p>
-	</section>
-
-	<!-- OWNER VIEW (?owner) -->
-	<section id="owner" style="display:none; padding:50px 7%; background:var(--sand);">
-		<div style="max-width:760px; margin:0 auto;">
-			<p style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--blue);">Live from Google Calendar</p>
-			<h2 style="font-size:2rem; color:var(--navy); margin:6px 0 10px;">Upcoming blocked periods</h2>
-			<p class="muted">Every booking currently on the calendar. Changeover morning (the day after each block's last night) stays free for pickups.</p>
-			<div style="display:flex; justify-content:space-between; align-items:center; margin-top:22px;">
-				<p id="owner-summary" style="font-size:0.95rem; font-weight:700; color:var(--navy); margin:0;"></p>
-				<button id="owner-refresh" type="button" style="padding:8px 18px; border-radius:20px; border:1px solid #ccd7df; background:#fff; cursor:pointer; font-weight:600;">↻ Refresh</button>
-			</div>
-			<div id="owner-error" style="display:none; margin-top:15px; background:#fff7e7; border-left:4px solid #e4b34f; padding:12px; border-radius:6px;">
-				⚠ Can't load the calendar right now. Check the API key, then hit refresh.
-			</div>
-			<div id="owner-list" style="margin-top:20px; display:grid; gap:12px;"></div>
-		</div>
-	</section>
-
-	<footer class="dark-footer">
-		<b>SMURFVILLE</b>
-		<p>Campervan hire · Canberra, ACT</p>
-		
-		<div class="footer-contacts">
-			<p>Click the WhatsApp icon to contact us directly</br> 
-				<a href="https://wa.me/61493790098" target="_blank" rel="noreferrer" style="text-decoration: none; color: #25D366; font-weight: bold;">WhatsApp</a>
-			</p>
-			<p>Email: 
-				<a href="mailto:parkeunra1531@gmail.com" class="dark-contact-link">parkeunra1531@gmail.com</a>
-			</p>
-		</div>
-		
-		<p class="small">Rates, availability, insurance, bond, kilometre allowance, cleaning requirements and pickup/return times are confirmed directly before booking. Please ask for the full hire terms.</p>
-	</footer>
-
-	<!-- Flatpickr JS -->
-	<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
-
-	<script>
-	/* ============ Smurfville Calendar Integration & Logic ============ */
-	const CALENDAR_ID = "546c4df001660fe56793892d057b17a3f4361e531149194967ef013c48fdcfb1@group.calendar.google.com";
-	const API_KEY = "AIzaSyCpsTwp3LM9EPKUBEWzyyi3ACajsqIZsWo";
-	const NORMAL_RATE = 149, HIGH_RATE = 180, HIGH_MONTHS = [11, 0, 1], WHATSAPP = "61493790098", MIN_NIGHTS = 2, MAX_RETRIES = 2;
-
-	const pad = n => String(n).padStart(2, "0");
-	const parseLocal = s => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
-	const toISO = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
-	const todayLocal = () => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), d.getDate()); };
-	const addDays = (iso, n) => { const d = parseLocal(iso); d.setDate(d.getDate() + n); return toISO(d); };
-	const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-	const fmt = iso => { const d = parseLocal(iso); return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`; };
-
-	function eventToBlock(item) {
-		const s = item.start.date || item.start.dateTime.slice(0, 10);
-		let e = item.end.date || item.end.dateTime.slice(0, 10);
-		const ed = parseLocal(e);
-		ed.setDate(ed.getDate() - 1);
-		e = toISO(ed);
-		if (e < s) e = s;
-		return { start: s, end: e, title: item.summary || "Booked" };
-	}
-
-	async function fetchBlocksOnce() {
-		const tmin = toISO(todayLocal());
-		const mx = new Date(todayLocal());
-		mx.setMonth(mx.getMonth() + 18);
-		const tmax = toISO(mx);
-		const url = new URL(`https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(CALENDAR_ID)}/events`);
-		url.search = new URLSearchParams({
-			key: API_KEY,
-			timeMin: `${tmin}T00:00:00Z`,
-			timeMax: `${tmax}T23:59:59Z`,
-			singleEvents: "true",
-			orderBy: "startTime",
-			maxResults: "250",
-			fields: "items(start,end,summary)"
-		});
-		const res = await fetch(url);
-		if (!res.ok) throw new Error("Calendar API " + res.status);
-		const data = await res.json();
-		return (data.items || []).map(eventToBlock);
-	}
-
-	async function getAvailability() {
-		let lastErr = null;
-		for (let i = 0; i < MAX_RETRIES; i++) {
-			try {
-				return { blocks: await fetchBlocksOnce(), error: null };
-			} catch (e) {
-				lastErr = e;
-				if (i < MAX_RETRIES - 1) await new Promise(r => setTimeout(r, 1000));
 			}
-		}
-		return { blocks: [], error: lastErr };
-	}
-
-	const findClash = (blocks, p, r) => (!p || !r) ? null : (blocks.find(b => p <= b.end && r > b.start) || null);
-
-	/* ---- State ---- */
-	let blocks = [], calState = "loading", pickup = null, ret = null;
-	const $ = id => document.getElementById(id);
-	const pickupISO = () => pickup ? toISO(pickup) : "";
-	const returnISO = () => ret ? toISO(ret) : "";
-
-	function quote() {
-		const p = pickupISO(), r = returnISO();
-		if (!p || !r || r <= p) return null;
-		let nd = 0, hd = 0;
-		const c = parseLocal(p), end = parseLocal(r);
-		while (c < end) {
-			if (HIGH_MONTHS.includes(c.getMonth())) hd++;
-			else nd++;
-			c.setDate(c.getDate() + 1);
-		}
-		return {
-			normalDays: nd,
-			highDays: hd,
-			totalDays: nd + hd,
-			normalTotal: nd * NORMAL_RATE,
-			highTotal: hd * HIGH_RATE,
-			total: nd * NORMAL_RATE + hd * HIGH_RATE
-		};
-	}
-
-	/* ---- Flatpickr Setup ---- */
-	const pickupDisable = () => blocks.map(b => ({ from: b.start, to: b.end }));
-	const returnDisable = () => blocks.map(b => b.end > b.start ? { from: addDays(b.start, 1), to: b.end } : { from: b.start, to: b.end });
-	const dayTitle = (dObj, dStr, fp, dayElem) => {
-		if (dayElem.classList.contains("flatpickr-disabled")) dayElem.title = "Booked";
-	};
-
-	const fpPickup = flatpickr("#pickup", {
-		dateFormat: "Y-m-d",
-		minDate: "today",
-		disableMobile: true,
-		disable: [],
-		onDayCreate: dayTitle,
-		onChange(sel) {
-			pickup = sel[0] || null;
-			clearErr();
-			const retInput = $("return");
-			if (pickup) {
-				const minRet = addDays(toISO(pickup), MIN_NIGHTS);
-				fpReturn.set("minDate", minRet);
-				retInput.disabled = false;
-				retInput.placeholder = "Return date";
-				if (ret && toISO(ret) < minRet) {
-					ret = null;
-					fpReturn.clear();
+		</style>
+	</head>
+	<body>
+		
+		<header>
+			<div class="logo">SMURFVILLE 🚐</div>
+			<nav>
+				<a href="#van">The van</a>
+				<a href="#features">Features</a>
+				<a href="#gallery">Photos</a>
+				<a href="#booking">Enquire</a>
+			</nav>
+		</header>
+		
+		<div class="hero" style="background-image: linear-gradient(90deg, rgba(5, 24, 43, 0.78), rgba(5, 24, 43, 0.12)), url('pic/cov.jpg');">
+			<div class="hero-inner">
+				<div class="eyebrow">CANBERRA · AUSTRALIA</div>
+				<h1>Your car.<br>Your home.<br>Endless adventures.</h1>
+				<p>Meet Smurfville — a fun-sized, fully furnished campervan made for easy city escapes, coastal weekends and slow mornings by the sea.</p>
+				<a class="btn" href="#booking">Enquire to book</a>
+			</div>
+		</div>
+		
+		<section class="intro">
+			<h2>Your cozy home on wheels</h2>
+			<p>Cosy, practical, easy to drive and park. Smurfville is designed for two adults and maybe 1 small kid (T&amp;Cs apply), who want the freedom to explore without giving up the comforts of home.</p>
+			<div class="price">From $149 per night</div>
+			<p class="muted">Minimum hire: 2 nights · Long-stay discounts available for hires over 7 days.</p>
+		</section>
+		
+		<section id="van">
+			<h2 class="section-title">Fully furnished van. Big freedom.</h2>
+			<p>This fun-sized legend sleeps <b>2 adults</b> in a queen size bed. There’s a dining table for meals, planning the next stop or simply relaxing after a day out. The kitchen comes equipped with the essentials, and the van is set up for flexible off-grid adventures.</p>
+			<div class="grid">
+				<div class="card"><h3>🛏 Sleep &amp; relax</h3><p>Cosy queen size bed, dining table and seating area. Fully equipped with awning, camping indoor &amp; outdoor dining set-up.</p></div>
+				<div class="card"><h3>🍳 Cook on the go</h3><p>Kitchen essentials, microwave, induction cooking, fridge/freezer and cooking equipment.</p></div>
+				<div class="card"><h3>🌞 Off-grid friendly</h3><p>Heavy battery system, solar panels and vehicle charging while driving help support free-camping trips.</p></div>
+				<div class="card"><h3>🚿 Everyday comforts</h3><p>Heated bed, skylight and fan duo, shower/hose, plus a portable toilet for urine only.</p></div>
+			</div>
+		</section>
+		
+		<section class="features" id="features">
+			<h2 class="section-title">What's included</h2>
+			<div class="pill-list">
+				<span class="pill">Insulated &amp; heated bed for winter</span><span class="pill">Basic pantry</span><span class="pill">Camping table &amp; chairs</span><span class="pill">Coffee &amp; tea</span><span class="pill">Boiling water</span><span class="pill">Cutlery &amp; plates</span><span class="pill">Fridge</span><span class="pill">Freezer</span><span class="pill">Fan</span><span class="pill">Outdoor kitchen</span><span class="pill">Solar panels</span><span class="pill">Speaker</span><span class="pill">Microwave &amp; Induction cooking</span><span class="pill">Cooking equipment</span><span class="pill">Outdoor shower/hose</span><span class="pill">Big storage for fishing gears &amp; outdoor equipment</span><span class="pill">Portable toilet (urine only)</span>
+			</div>
+			<div class="notice"><b>Power for the road:</b> The onboard battery can recharge while driving, with solar panels providing extra support. 2 hours of driving fully charges the batteries; actual power depends on conditions and usage.</div>
+			<p style="margin-top:18px"><b>Pack your clothes and go!</b></p>
+		</section>
+		
+		<section>
+			<h2 class="section-title">Hire details</h2>
+			<div class="grid">
+				<div class="card"><h3>Pickup/Drop off</h3><p>Canberra, ACT</p></div>
+				<div class="card"><h3>Driving</h3><p>Toyota HiAce 2010 Automatic transmission · 3 seatbelts · Full licence required · Premium Diesel ·</p></div>
+				<div class="card"><h3>Who can hire?</h3><p>Minimum hirer age: 20 years old</p></div>
+				<div class="card"><h3>House rules</h3><p>No pets · No off-road driving · Sleeps 2 adults · No smoking inside · Clean as you go ·</p></div>
+			</div>
+			<div class="notice"><b>Long-term savings:</b> Tiered discounts of 10–15% may be available for bookings longer than 7 days. The exact discount will be confirmed with your quote.</div>
+		</section>
+		
+		<section id="gallery">
+			<h2 class="section-title">Take a look inside</h2>
+			<p class="muted">A few snapshots of Smurfville, inside and out.</p>
+			<div class="gallery">
+				<img src=".\pic\1.jpg" alt="Smurfville campervan photo"><img src=".\pic\2.jpg" alt="Smurfville campervan photo"><img src=".\pic\3.jpg" alt="Smurfville campervan photo"><img src=".\pic\4.jpg" alt="Smurfville campervan photo"><img src=".\pic\5.jpg" alt="Smurfville campervan photo"><img src=".\pic\6.jpg" alt="Smurfville campervan photo"><img src=".\pic\7.jpg" alt="Smurfville campervan photo">
+			</div>
+		</section>
+		
+		<section id="booking" class="intro">
+			<h2>Ready for an adventure?</h2>
+			<p>Send an enquiry with your dates and number of travellers. We’ll get back to you to confirm availability and the total price.</p>
+			
+			<form id="enquiry" novalidate>
+				<input required id="name" name="name" placeholder="Your name">
+				<input required type="email" id="email" name="email" placeholder="Email address">
+				<input required id="phone" name="phone" placeholder="Phone number">
+				
+				<select id="travellers" name="travellers">
+					<option value="2">2 travellers</option>
+					<option value="1">1 traveller</option>
+				</select>
+				
+				<!-- Flatpickr inputs -->
+				<input required id="pickup" name="pickup" placeholder="Pickup Date" readonly>
+				<input required id="return" name="return" placeholder="Return Date — pick pickup first" readonly disabled>
+				
+				<!-- Live Availability Status & Legend -->
+				<div class="form-legend">
+					<span id="cal-loading">⏳ Loading live availability…</span>
+					<span id="cal-legend" style="display:none;">
+					</div>
+					
+					<!-- Error Notices -->
+					<div class="form-alert amber" id="cal-error" style="display:none;">
+						<span>⚠</span><span>Can't sync live availability — you can still pick dates and submit, or <a href="https://wa.me/61493790098" target="_blank" rel="noreferrer">message us on WhatsApp</a>.</span>
+					</div>
+					
+					
+					<textarea id="message" name="message" placeholder="Tell us anything else (optional)"></textarea>
+					
+					<!-- Rental Cost Breakdown -->
+					<div id="rentalSummarySection" class="rental-summary">
+						<h3 class="summary-title">Rental Summary</h3>
+						<p class="summary-subtitle">Your rental cost breakdown</p>
+						
+						<div class="rental-duration">
+							<span>Total Rental Duration</span>
+							<strong><span id="rentalDays">0</span> Nights</strong>
+						</div>
+						
+						<div class="season-breakdown">
+							<div id="normalSeasonSection" class="season-card">
+								<div class="season-info">
+									<span class="season-dot normal-dot"></span>
+									<div class="season-text-group">
+										<h4>Normal Season</h4>
+										<small>$149 per night</small>
+									</div>
+								</div>
+								<div class="season-price">
+									<span class="day-count"><span id="normalDays">0</span> Nights</span>
+									<strong class="price-value">$<span id="normalTotal">0</span></strong>
+								</div>
+							</div>
+							
+							<div id="highSeasonSection" class="season-card">
+								<div class="season-info">
+									<span class="season-dot high-dot"></span>
+									<div class="season-text-group">
+										<h4>High Season</h4>
+										<small>$180 per night · Dec–Feb</small>
+									</div>
+								</div>
+								<div class="season-price">
+									<span class="day-count"><span id="highDays">0</span> Nights</span>
+									<strong class="price-value">$<span id="highTotal">0</span></strong>
+								</div>
+							</div>
+						</div>
+						
+						<div class="estimated-total">
+							<div class="total-row">
+								<div class="total-label">Estimated Rental Price</div>
+								<div class="total-amount">$<span id="totalPrice">0</span></div>
+							</div>
+							
+							<div class="price-disclaimer">
+								<span class="disclaimer-icon">ⓘ</span>
+								<span class="disclaimer-text">This is an estimated price only. The final price will be confirmed prior to payment.</span>
+							</div>
+							<div class="price-disclaimer">
+								<span class="disclaimer-icon">ⓘ</span>
+								<span class="disclaimer-text">Rental Payment: Full payment is due in cash upon van collection.</span>
+							</div>
+							<div class="price-disclaimer">
+								<span class="disclaimer-icon">ⓘ</span>
+								<span class="disclaimer-text">Refundable Bond: A $250 refundable bond via PayID 0493790098 is required to confirm your booking — refunded on safe return.</span>
+							</div>
+							<div class="price-disclaimer">
+								<span class="disclaimer-icon">ⓘ</span>
+								<span class="disclaimer-text">Pick-up and drop-off times must be arranged.<br>
+									• Preferred Pick-up: 5:30 PM – 7:00 PM<br>
+									• Preferred Drop-off: 5:00 PM – 6:30 PM</span>
+							</div>
+						</div>
+					</div>
+					<div class="form-alert red" id="submit-error" style="display:none;">
+						<span>✕</span><span id="submit-error-text"></span>
+					</div>		
+					<button class="btn" id="submit-btn" type="submit" disabled style="padding:15px; font-size:1.05rem;">Select dates to enquire</button>
+				</form>
+				
+				<p id="formmsg" class="muted" style="text-align:center; max-width:760px; margin:22px auto 0; font-size:0.85rem;">*Please note that a refundable security bond of $250 is required upon booking. This amount will be fully refunded following the safe return of the van, subject to an inspection confirming no damage, missing items, or violations of our Terms and Conditions.</p>
+			</section>
+			
+			<!-- OWNER VIEW (?owner) -->
+			<section id="owner" style="display:none; padding:50px 7%; background:var(--sand);">
+				<div style="max-width:760px; margin:0 auto;">
+					<p style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--blue);">Live from Google Calendar</p>
+					<h2 style="font-size:2rem; color:var(--navy); margin:6px 0 10px;">Upcoming blocked periods</h2>
+					<p class="muted">Every booking currently on the calendar. Changeover morning (the day after each block's last night) stays free for pickups.</p>
+					<div style="display:flex; justify-content:space-between; align-items:center; margin-top:22px;">
+						<p id="owner-summary" style="font-size:0.95rem; font-weight:700; color:var(--navy); margin:0;"></p>
+						<button id="owner-refresh" type="button" style="padding:8px 18px; border-radius:20px; border:1px solid #ccd7df; background:#fff; cursor:pointer; font-weight:600;">↻ Refresh</button>
+					</div>
+					<div id="owner-error" style="display:none; margin-top:15px; background:#fff7e7; border-left:4px solid #e4b34f; padding:12px; border-radius:6px;">
+						⚠ Can't load the calendar right now. Check the API key, then hit refresh.
+					</div>
+					<div id="owner-list" style="margin-top:20px; display:grid; gap:12px;"></div>
+				</div>
+			</section>
+			
+			<footer class="dark-footer">
+				<b>SMURFVILLE</b>
+				<p>Campervan hire · Canberra, ACT</p>
+				
+				<div class="footer-contacts">
+					<p>Click the WhatsApp icon to contact us directly</br> 
+						<a href="https://wa.me/61493790098" target="_blank" rel="noreferrer" style="text-decoration: none; color: #25D366; font-weight: bold;">WhatsApp</a>
+					</p>
+					<p>Email: 
+						<a href="mailto:parkeunra1531@gmail.com" class="dark-contact-link">parkeunra1531@gmail.com</a>
+					</p>
+				</div>
+				
+				<p class="small">Rates, availability, insurance, bond, kilometre allowance, cleaning requirements and pickup/return times are confirmed directly before booking. Please ask for the full hire terms.</p>
+			</footer>
+			
+			<!-- Flatpickr JS -->
+			<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
+			
+			<script>
+				/* ============ Smurfville Calendar Integration & Logic ============ */
+				const CALENDAR_ID = "546c4df001660fe56793892d057b17a3f4361e531149194967ef013c48fdcfb1@group.calendar.google.com";
+				const API_KEY = "AIzaSyCpsTwp3LM9EPKUBEWzyyi3ACajsqIZsWo";
+				const NORMAL_RATE = 149, HIGH_RATE = 180, HIGH_MONTHS = [11, 0, 1], WHATSAPP = "61493790098", MIN_NIGHTS = 2, MAX_RETRIES = 2;
+				
+				const pad = n => String(n).padStart(2, "0");
+				const parseLocal = s => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
+				const toISO = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+				const todayLocal = () => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), d.getDate()); };
+				const addDays = (iso, n) => { const d = parseLocal(iso); d.setDate(d.getDate() + n); return toISO(d); };
+				const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+				const fmt = iso => { const d = parseLocal(iso); return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`; };
+				
+				function eventToBlock(item) {
+					const s = item.start.date || item.start.dateTime.slice(0, 10);
+					let e = item.end.date || item.end.dateTime.slice(0, 10);
+					const ed = parseLocal(e);
+					ed.setDate(ed.getDate() - 1);
+					e = toISO(ed);
+					if (e < s) e = s;
+					return { start: s, end: e, title: item.summary || "Booked" };
 				}
-			} else {
-				retInput.disabled = true;
-				retInput.placeholder = "Return date — pick pickup first";
-				ret = null;
-				fpReturn.clear();
-			}
-			if (ret && pickup && findClash(blocks, toISO(pickup), toISO(ret))) {
-				ret = null;
-				fpReturn.clear();
-			}
-			render();
-		}
-	});
-
-	const fpReturn = flatpickr("#return", {
-		dateFormat: "Y-m-d",
-		minDate: "today",
-		disableMobile: true,
-		disable: [],
-		onDayCreate: dayTitle,
-		onChange(sel) {
-			ret = sel[0] || null;
-			clearErr();
-			render();
-		}
-	});
-
-	function render() {
-		const q = quote(), clash = findClash(blocks, pickupISO(), returnISO());
-		const sum = $("rentalSummarySection");
-		
-		if (q && !clash) {
-			if (sum) sum.style.display = "block";
-			if ($("rentalDays")) $("rentalDays").textContent = q.totalDays;
-			if ($("normalSeasonSection")) $("normalSeasonSection").style.display = q.normalDays > 0 ? "flex" : "none";
-			if ($("highSeasonSection")) $("highSeasonSection").style.display = q.highDays > 0 ? "flex" : "none";
-			if ($("normalDays")) $("normalDays").textContent = q.normalDays;
-			if ($("normalTotal")) $("normalTotal").textContent = q.normalTotal.toLocaleString("en-AU");
-			if ($("highDays")) $("highDays").textContent = q.highDays;
-			if ($("highTotal")) $("highTotal").textContent = q.highTotal.toLocaleString("en-AU");
-			if ($("totalPrice")) $("totalPrice").textContent = q.total.toLocaleString("en-AU");
-		} else {
-			if (sum) sum.style.display = "none";
-		}
-
-		const btn = $("submit-btn");
-		if (btn) {
-			const canSubmit = q && !clash && q.totalDays >= MIN_NIGHTS;
-			btn.disabled = !canSubmit;
-			if (canSubmit) {
-				btn.textContent = "💬 Submit Enquiry via WhatsApp";
-			} else if (!pickup) {
-				btn.textContent = "Select pickup date";
-			} else if (!ret) {
-				btn.textContent = "Select return date";
-			} else {
-				btn.textContent = "Select valid dates";
-			}
-		}
-	}
-
-	function clearErr() {
-		const err = $("submit-error");
-		if (err) err.style.display = "none";
-	}
-
-	function showErr(msg) {
-		const err = $("submit-error");
-		const txt = $("submit-error-text");
-		if (txt) txt.textContent = msg;
-		if (err) err.style.display = "flex";
-	}
-
-	async function loadCal() {
-		calState = "loading";
-		if ($("cal-loading")) $("cal-loading").style.display = "inline";
-		if ($("cal-legend")) $("cal-legend").style.display = "none";
-		if ($("cal-error")) $("cal-error").style.display = "none";
-
-		const { blocks: b, error } = await getAvailability();
-		blocks = b;
-		calState = error ? "failed" : "ready";
-
-		if ($("cal-loading")) $("cal-loading").style.display = "none";
-		if (error) {
-			if ($("cal-error")) $("cal-error").style.display = "flex";
-		} else {
-			if ($("cal-legend")) $("cal-legend").style.display = "inline";
-		}
-
-		fpPickup.set("disable", pickupDisable());
-		fpReturn.set("disable", returnDisable());
-		render();
-	}
-
-	/* Form Submission */
-	$("enquiry").addEventListener("submit", e => {
-		e.preventDefault();
-		clearErr();
-
-		const f = e.target;
-		const name = f.name?.value.trim() || "";
-		const email = f.email?.value.trim() || "";
-		const phone = f.phone?.value.trim() || "";
-		const travellers = f.travellers?.value || "2";
-		const message = f.message?.value.trim() || "";
-
-		if (!name || !email || !phone) {
-			showErr("Please fill in your name, email and phone.");
-			return;
-		}
-		const p = pickupISO(), r = returnISO();
-		if (!p || !r) {
-			showErr("Please choose your pickup and return dates.");
-			return;
-		}
-		const q = quote();
-		if (q && q.totalDays < MIN_NIGHTS) {
-			showErr(`Minimum hire is ${MIN_NIGHTS} nights.`);
-			return;
-		}
-		const hit = findClash(blocks, p, r);
-		if (hit) {
-			showErr(`Those dates clash with an existing booking (${hit.start} → ${hit.end}). Please pick different dates.`);
-			return;
-		}
-
-		const msg = `*New Booking Enquiry for Smurfville*\n\n` +
-			`*Name:* ${name}\n` +
-			`*Email:* ${email}\n` +
-			`*Phone:* ${phone}\n` +
-			`*Travellers:* ${travellers}\n\n` +
-			`*Trip Details:*\n` +
-			`• Pickup: ${p}\n` +
-			`• Return: ${r}\n` +
-			`• Duration: ${q ? q.totalDays : 0} nights\n\n` +
-			`*Estimated Total:* $${q ? q.total.toLocaleString("en-AU") : 0} AUD\n\n` +
-			`*Notes:* ${message || "None"}`;
-
-		window.location.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
-	});
-
-	/* ---- Owner view (?owner) ---- */
-	function renderOwner() {
-		const list = $("owner-list");
-		const summary = $("owner-summary");
-		const err = $("owner-error");
-		if (!list) return;
-		list.innerHTML = "";
-
-		if (calState === "loading") {
-			if (summary) summary.textContent = "Loading calendar…";
-			if (err) err.style.display = "none";
-			return;
-		}
-		if (calState === "failed") {
-			if (summary) summary.textContent = "";
-			if (err) err.style.display = "block";
-			return;
-		}
-		if (err) err.style.display = "none";
-
-		const today = toISO(todayLocal());
-		const upcoming = blocks.filter(b => b.end >= today);
-		const totalNights = upcoming.reduce((n, b) => n + (Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000) + 1), 0);
-		if (summary) summary.textContent = `${upcoming.length} upcoming booking${upcoming.length === 1 ? "" : "s"} · ${totalNights} nights blocked`;
-
-		if (upcoming.length === 0) {
-			list.innerHTML = '<div style="background:#fff; padding:18px; border-radius:10px; border:1px solid #ccd7df;"><p style="margin:0;">No upcoming bookings — the van is wide open.</p></div>';
-			return;
-		}
-
-		upcoming.forEach((b) => {
-			const n = Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000) + 1;
-			const div = document.createElement("div");
-			div.style.cssText = "display:flex; justify-content:space-between; align-items:center; background:#fff; border:1px solid #ccd7df; border-radius:10px; padding:16px 20px;";
-			div.innerHTML = `<div><h3 style="margin:0; font-size:1.05rem; color:var(--navy);">${b.title}</h3><p style="margin:4px 0 0; font-size:0.88rem; color:#617080;">${fmt(b.start)} → ${fmt(b.end)}<span style="color:#94a3b8"> · pickup free from ${fmt(b.end)} morning</span></p></div><span style="font-size:0.85rem; font-weight:700; background:#f1f5f9; padding:6px 14px; border-radius:20px; color:var(--navy);">☾ ${n} night${n === 1 ? "" : "s"}</span>`;
-			list.appendChild(div);
-		});
-	}
-
-	$("owner-refresh").addEventListener("click", () => {
-		loadCal().then(renderOwner);
-	});
-
-	/* ---- Init ---- */
-	const isOwner = new URLSearchParams(location.search).has("owner");
-	if (isOwner) {
-		document.querySelectorAll("section, header, footer, div.hero").forEach(el => {
-			if (el.id !== "owner") el.style.display = "none";
-		});
-		$("owner").style.display = "block";
-		document.title = "Smurfville — Owner: Upcoming bookings";
-	}
-
-	loadCal().then(() => {
-		if (isOwner) renderOwner();
-	});
-	</script>
-</body>
-</html>
+				
+				async function fetchBlocksOnce() {
+					const tmin = toISO(todayLocal());
+					const mx = new Date(todayLocal());
+					mx.setMonth(mx.getMonth() + 18);
+					const tmax = toISO(mx);
+					const url = new URL(`https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(CALENDAR_ID)}/events`);
+					url.search = new URLSearchParams({
+						key: API_KEY,
+						timeMin: `${tmin}T00:00:00Z`,
+						timeMax: `${tmax}T23:59:59Z`,
+						singleEvents: "true",
+						orderBy: "startTime",
+						maxResults: "250",
+						fields: "items(start,end,summary)"
+					});
+					const res = await fetch(url);
+					if (!res.ok) throw new Error("Calendar API " + res.status);
+					const data = await res.json();
+					return (data.items || []).map(eventToBlock);
+				}
+				
+				async function getAvailability() {
+					let lastErr = null;
+					for (let i = 0; i < MAX_RETRIES; i++) {
+						try {
+							return { blocks: await fetchBlocksOnce(), error: null };
+							} catch (e) {
+							lastErr = e;
+							if (i < MAX_RETRIES - 1) await new Promise(r => setTimeout(r, 1000));
+						}
+					}
+					return { blocks: [], error: lastErr };
+				}
+				
+				const findClash = (blocks, p, r) => (!p || !r) ? null : (blocks.find(b => p <= b.end && r > b.start) || null);
+				
+				/* ---- State ---- */
+				let blocks = [], calState = "loading", pickup = null, ret = null;
+				const $ = id => document.getElementById(id);
+				const pickupISO = () => pickup ? toISO(pickup) : "";
+				const returnISO = () => ret ? toISO(ret) : "";
+				
+				function quote() {
+					const p = pickupISO(), r = returnISO();
+					if (!p || !r || r <= p) return null;
+					let nd = 0, hd = 0;
+					const c = parseLocal(p), end = parseLocal(r);
+					while (c < end) {
+						if (HIGH_MONTHS.includes(c.getMonth())) hd++;
+						else nd++;
+						c.setDate(c.getDate() + 1);
+					}
+					return {
+						normalDays: nd,
+						highDays: hd,
+						totalDays: nd + hd,
+						normalTotal: nd * NORMAL_RATE,
+						highTotal: hd * HIGH_RATE,
+						total: nd * NORMAL_RATE + hd * HIGH_RATE
+					};
+				}
+				
+				/* ---- Flatpickr Setup ---- */
+				const pickupDisable = () => blocks.map(b => ({ from: b.start, to: b.end }));
+				const returnDisable = () => blocks.map(b => b.end > b.start ? { from: addDays(b.start, 1), to: b.end } : { from: b.start, to: b.end });
+				const dayTitle = (dObj, dStr, fp, dayElem) => {
+					if (dayElem.classList.contains("flatpickr-disabled")) dayElem.title = "Booked";
+				};
+				
+				const fpPickup = flatpickr("#pickup", {
+					dateFormat: "Y-m-d",
+					minDate: "today",
+					disableMobile: true,
+					disable: [],
+					onDayCreate: dayTitle,
+					onChange(sel) {
+						pickup = sel[0] || null;
+						clearErr();
+						const retInput = $("return");
+						if (pickup) {
+							const minRet = addDays(toISO(pickup), MIN_NIGHTS);
+							fpReturn.set("minDate", minRet);
+							retInput.disabled = false;
+							retInput.placeholder = "Return date";
+							if (ret && toISO(ret) < minRet) {
+								ret = null;
+								fpReturn.clear();
+							}
+							} else {
+							retInput.disabled = true;
+							retInput.placeholder = "Return date — pick pickup first";
+							ret = null;
+							fpReturn.clear();
+						}
+						if (ret && pickup && findClash(blocks, toISO(pickup), toISO(ret))) {
+							ret = null;
+							fpReturn.clear();
+						}
+						render();
+					}
+				});
+				
+				const fpReturn = flatpickr("#return", {
+					dateFormat: "Y-m-d",
+					minDate: "today",
+					disableMobile: true,
+					disable: [],
+					onDayCreate: dayTitle,
+					onChange(sel) {
+						ret = sel[0] || null;
+						clearErr();
+						render();
+					}
+				});
+				
+				function render() {
+					const q = quote(), clash = findClash(blocks, pickupISO(), returnISO());
+					const sum = $("rentalSummarySection");
+					
+					if (q && !clash) {
+						if (sum) sum.style.display = "block";
+						if ($("rentalDays")) $("rentalDays").textContent = q.totalDays;
+						if ($("normalSeasonSection")) $("normalSeasonSection").style.display = q.normalDays > 0 ? "flex" : "none";
+						if ($("highSeasonSection")) $("highSeasonSection").style.display = q.highDays > 0 ? "flex" : "none";
+						if ($("normalDays")) $("normalDays").textContent = q.normalDays;
+						if ($("normalTotal")) $("normalTotal").textContent = q.normalTotal.toLocaleString("en-AU");
+						if ($("highDays")) $("highDays").textContent = q.highDays;
+						if ($("highTotal")) $("highTotal").textContent = q.highTotal.toLocaleString("en-AU");
+						if ($("totalPrice")) $("totalPrice").textContent = q.total.toLocaleString("en-AU");
+						} else {
+						if (sum) sum.style.display = "none";
+					}
+					
+					const btn = $("submit-btn");
+					if (btn) {
+						const canSubmit = q && !clash && q.totalDays >= MIN_NIGHTS;
+						btn.disabled = !canSubmit;
+						if (canSubmit) {
+							btn.textContent = "💬 Submit Enquiry via WhatsApp";
+							} else if (!pickup) {
+							btn.textContent = "Select pickup date";
+							} else if (!ret) {
+							btn.textContent = "Select return date";
+							} else {
+							btn.textContent = "Select valid dates";
+						}
+					}
+				}
+				
+				function clearErr() {
+					const err = $("submit-error");
+					if (err) err.style.display = "none";
+				}
+				
+				function showErr(msg) {
+					const err = $("submit-error");
+					const txt = $("submit-error-text");
+					if (txt) txt.textContent = msg;
+					if (err) err.style.display = "flex";
+				}
+				
+				async function loadCal() {
+					calState = "loading";
+					if ($("cal-loading")) $("cal-loading").style.display = "inline";
+					if ($("cal-legend")) $("cal-legend").style.display = "none";
+					if ($("cal-error")) $("cal-error").style.display = "none";
+					
+					const { blocks: b, error } = await getAvailability();
+					blocks = b;
+					calState = error ? "failed" : "ready";
+					
+					if ($("cal-loading")) $("cal-loading").style.display = "none";
+					if (error) {
+						if ($("cal-error")) $("cal-error").style.display = "flex";
+						} else {
+						if ($("cal-legend")) $("cal-legend").style.display = "inline";
+					}
+					
+					fpPickup.set("disable", pickupDisable());
+					fpReturn.set("disable", returnDisable());
+					render();
+				}
+				
+				/* Form Submission */
+				$("enquiry").addEventListener("submit", e => {
+					e.preventDefault();
+					clearErr();
+					
+					const f = e.target;
+					const name = f.name?.value.trim() || "";
+					const email = f.email?.value.trim() || "";
+					const phone = f.phone?.value.trim() || "";
+					const travellers = f.travellers?.value || "2";
+					const message = f.message?.value.trim() || "";
+					
+					if (!name || !email || !phone) {
+						showErr("Please fill in your name, email and phone.");
+						return;
+					}
+					const p = pickupISO(), r = returnISO();
+					if (!p || !r) {
+						showErr("Please choose your pickup and return dates.");
+						return;
+					}
+					const q = quote();
+					if (q && q.totalDays < MIN_NIGHTS) {
+						showErr(`Minimum hire is ${MIN_NIGHTS} nights.`);
+						return;
+					}
+					const hit = findClash(blocks, p, r);
+					if (hit) {
+						showErr(`Those dates clash with an existing booking (${hit.start} → ${hit.end}). Please pick different dates.`);
+						return;
+					}
+					
+					const msg = `*New Booking Enquiry for Smurfville*\n\n` +
+					`*Name:* ${name}\n` +
+					`*Email:* ${email}\n` +
+					`*Phone:* ${phone}\n` +
+					`*Travellers:* ${travellers}\n\n` +
+					`*Trip Details:*\n` +
+					`• Pickup: ${p}\n` +
+					`• Return: ${r}\n` +
+					`• Duration: ${q ? q.totalDays : 0} nights\n\n` +
+					`*Estimated Total:* $${q ? q.total.toLocaleString("en-AU") : 0} AUD\n\n` +
+					`*Notes:* ${message || "None"}`;
+					
+					window.location.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
+				});
+				
+				/* ---- Owner view (?owner) ---- */
+				function renderOwner() {
+					const list = $("owner-list");
+					const summary = $("owner-summary");
+					const err = $("owner-error");
+					if (!list) return;
+					list.innerHTML = "";
+					
+					if (calState === "loading") {
+						if (summary) summary.textContent = "Loading calendar…";
+						if (err) err.style.display = "none";
+						return;
+					}
+					if (calState === "failed") {
+						if (summary) summary.textContent = "";
+						if (err) err.style.display = "block";
+						return;
+					}
+					if (err) err.style.display = "none";
+					
+					const today = toISO(todayLocal());
+					const upcoming = blocks.filter(b => b.end >= today);
+					const totalNights = upcoming.reduce((n, b) => n + (Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000) + 1), 0);
+					if (summary) summary.textContent = `${upcoming.length} upcoming booking${upcoming.length === 1 ? "" : "s"} · ${totalNights} nights blocked`;
+					
+					if (upcoming.length === 0) {
+						list.innerHTML = '<div style="background:#fff; padding:18px; border-radius:10px; border:1px solid #ccd7df;"><p style="margin:0;">No upcoming bookings — the van is wide open.</p></div>';
+						return;
+					}
+					
+					upcoming.forEach((b) => {
+						const n = Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000) + 1;
+						const div = document.createElement("div");
+						div.style.cssText = "display:flex; justify-content:space-between; align-items:center; background:#fff; border:1px solid #ccd7df; border-radius:10px; padding:16px 20px;";
+						div.innerHTML = `<div><h3 style="margin:0; font-size:1.05rem; color:var(--navy);">${b.title}</h3><p style="margin:4px 0 0; font-size:0.88rem; color:#617080;">${fmt(b.start)} → ${fmt(b.end)}<span style="color:#94a3b8"> · pickup free from ${fmt(b.end)} morning</span></p></div><span style="font-size:0.85rem; font-weight:700; background:#f1f5f9; padding:6px 14px; border-radius:20px; color:var(--navy);">☾ ${n} night${n === 1 ? "" : "s"}</span>`;
+						list.appendChild(div);
+					});
+				}
+				
+				$("owner-refresh").addEventListener("click", () => {
+					loadCal().then(renderOwner);
+				});
+				
+				/* ---- Init ---- */
+				const isOwner = new URLSearchParams(location.search).has("owner");
+				if (isOwner) {
+					document.querySelectorAll("section, header, footer, div.hero").forEach(el => {
+						if (el.id !== "owner") el.style.display = "none";
+					});
+					$("owner").style.display = "block";
+					document.title = "Smurfville — Owner: Upcoming bookings";
+				}
+				
+				loadCal().then(() => {
+					if (isOwner) renderOwner();
+				});
+			</script>
+		</body>
+	</html>	
