@@ -445,7 +445,7 @@
 				}
 				
 				/* ---- Flatpickr Setup ---- */
-				const pickupDisable = () => blocks.map(b => ({ from: b.start, to: b.end }));
+				const pickupDisable = () => blocks.map(b => ({ from: b.start, to: addDays(b.end, -1) }));
 				const returnDisable = () => blocks.map(b => b.end > b.start ? { from: addDays(b.start, 1), to: b.end } : { from: b.start, to: b.end });
 				const dayTitle = (dObj, dStr, fp, dayElem) => {
 					if (dayElem.classList.contains("flatpickr-disabled")) dayElem.title = "Booked";
@@ -668,7 +668,7 @@
 				loadCal().then(() => {
 					if (isOwner) renderOwner();
 				});
-				/* 1911262310*/
+				/* 1911262318*/
 			</script>
 		</body>
 		
