@@ -635,7 +635,7 @@
 					
 					const today = toISO(todayLocal());
 					const upcoming = blocks.filter(b => b.end >= today);
-					const totalNights = upcoming.reduce((n, b) => n + (Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000) + 1), 0);
+					const totalNights = upcoming.reduce((n, b) => n + (Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000)), 0);
 					if (summary) summary.textContent = `${upcoming.length} upcoming booking${upcoming.length === 1 ? "" : "s"} · ${totalNights} nights blocked`;
 					
 					if (upcoming.length === 0) {
