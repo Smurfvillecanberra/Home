@@ -327,7 +327,7 @@
 				<div style="max-width:760px; margin:0 auto;">
 					<p style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--blue);">Live from Google Calendar</p>
 					<h2 style="font-size:2rem; color:var(--navy); margin:6px 0 10px;">Upcoming blocked periods</h2>
-					<p class="muted">Every booking currently on the calendar. Changeover morning (the day after each block's last night) stays free for pickups.</p>
+					<p class="muted">Every booking currently on the calendar.</p>
 					<div style="display:flex; justify-content:space-between; align-items:center; margin-top:22px;">
 						<p id="owner-summary" style="font-size:0.95rem; font-weight:700; color:var(--navy); margin:0;"></p>
 						<button id="owner-refresh" type="button" style="padding:8px 18px; border-radius:20px; border:1px solid #ccd7df; background:#fff; cursor:pointer; font-weight:600;">↻ Refresh</button>
@@ -646,7 +646,7 @@
 						const n = Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000) + 1;
 						const div = document.createElement("div");
 						div.style.cssText = "display:flex; justify-content:space-between; align-items:center; background:#fff; border:1px solid #ccd7df; border-radius:10px; padding:16px 20px;";
-						div.innerHTML = `<div><h3 style="margin:0; font-size:1.05rem; color:var(--navy);">${b.title}</h3><p style="margin:4px 0 0; font-size:0.88rem; color:#617080;">${fmt(b.start)} → ${fmt(b.end)}<span style="color:#94a3b8"> · pickup free from ${fmt(b.end)} morning</span></p></div><span style="font-size:0.85rem; font-weight:700; background:#f1f5f9; padding:6px 14px; border-radius:20px; color:var(--navy);">☾ ${n} night${n === 1 ? "" : "s"}</span>`;
+						div.innerHTML = `<div><h3 style="margin:0; font-size:1.05rem; color:var(--navy);">${b.title}</h3><p style="margin:4px 0 0; font-size:0.88rem; color:#617080;">${fmt(b.start)} → ${fmt(addDays(b.end, 1))}<span style="color:#94a3b8"></span></p></div><span style="font-size:0.85rem; font-weight:700; background:#f1f5f9; padding:6px 14px; border-radius:20px; color:var(--navy);">☾ ${n} night${n === 1 ? "" : "s"}</span>`;
 						list.appendChild(div);
 					});
 				}
@@ -668,6 +668,8 @@
 				loadCal().then(() => {
 					if (isOwner) renderOwner();
 				});
+				/* 1911262245*/
 			</script>
 		</body>
+		
 	</html>	
