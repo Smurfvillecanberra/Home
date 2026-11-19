@@ -309,7 +309,7 @@
 								<span class="disclaimer-icon">ⓘ</span>
 								<span class="disclaimer-text">Pick-up and drop-off times must be arranged.<br>
 									• Preferred Pick-up: 5:30 PM – 7:00 PM<br>
-								• Preferred Drop-off: 5:00 PM – 6:30 PM</span>
+									• Preferred Drop-off: 5:00 PM – 6:30 PM</span>
 							</div>
 						</div>
 					</div>
@@ -344,7 +344,7 @@
 				<p>Campervan hire · Canberra, ACT</p>
 				
 				<div class="footer-contacts">
-					<p>Click the WhatsApp icon to contact us directly<br> 
+					<p>Click the WhatsApp icon to contact us directly</br> 
 						<a href="https://wa.me/61493790098" target="_blank" rel="noreferrer" style="text-decoration: none; color: #25D366; font-weight: bold;">WhatsApp</a>
 					</p>
 					<p>Email: 
@@ -383,16 +383,15 @@
 				}
 				
 				async function fetchBlocksOnce() {
-					const tmin = addDays(toISO(todayLocal()), -1);
+					const tmin = toISO(todayLocal());
 					const mx = new Date(todayLocal());
 					mx.setMonth(mx.getMonth() + 18);
-					const tmax = addDays(toISO(mx), 1);
+					const tmax = toISO(mx);
 					const url = new URL(`https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(CALENDAR_ID)}/events`);
 					url.search = new URLSearchParams({
 						key: API_KEY,
 						timeMin: `${tmin}T00:00:00Z`,
 						timeMax: `${tmax}T23:59:59Z`,
-						timeZone: "Australia/Sydney",
 						singleEvents: "true",
 						orderBy: "startTime",
 						maxResults: "250",
@@ -635,7 +634,7 @@
 					
 					const today = toISO(todayLocal());
 					const upcoming = blocks.filter(b => b.end >= today);
-					const totalNights = upcoming.reduce((n, b) => n + (Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000)), 0);
+					const totalNights = upcoming.reduce((n, b) => n + (Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000) + 1), 0);
 					if (summary) summary.textContent = `${upcoming.length} upcoming booking${upcoming.length === 1 ? "" : "s"} · ${totalNights} nights blocked`;
 					
 					if (upcoming.length === 0) {
@@ -644,10 +643,10 @@
 					}
 					
 					upcoming.forEach((b) => {
-						const n = Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000);
+						const n = Math.round((parseLocal(b.end) - parseLocal(b.start)) / 86400000) + 1;
 						const div = document.createElement("div");
 						div.style.cssText = "display:flex; justify-content:space-between; align-items:center; background:#fff; border:1px solid #ccd7df; border-radius:10px; padding:16px 20px;";
-						div.innerHTML = `<div><h3 style="margin:0; font-size:1.05rem; color:var(--navy);">${b.title}</h3><p style="margin:4px 0 0; font-size:0.88rem; color:#617080;">${fmt(b.start)} → ${fmt(b.end)}<span style="color:#94a3b8"> · </span></p></div><span style="font-size:0.85rem; font-weight:700; background:#f1f5f9; padding:6px 14px; border-radius:20px; color:var(--navy);">☾ ${n} night${n === 1 ? "" : "s"}</span>`;
+						div.innerHTML = `<div><h3 style="margin:0; font-size:1.05rem; color:var(--navy);">${b.title}</h3><p style="margin:4px 0 0; font-size:0.88rem; color:#617080;">${fmt(b.start)} → ${fmt(b.end)}<span style="color:#94a3b8"></span></p></div><span style="font-size:0.85rem; font-weight:700; background:#f1f5f9; padding:6px 14px; border-radius:20px; color:var(--navy);">☾ ${n} night${n === 1 ? "" : "s"}</span>`;
 						list.appendChild(div);
 					});
 				}
@@ -671,4 +670,4 @@
 				});
 			</script>
 		</body>
-	</html>		
+	</html>	
